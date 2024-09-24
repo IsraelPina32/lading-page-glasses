@@ -1,0 +1,271 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: var(--azul-claro);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100vh;
+    position: relative;
+}
+
+.home .slide {
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.slide.mostrar {
+    opacity: 1;
+}
+
+.slide-1  {
+    background-image: url(../img/banner.png);
+}
+
+.slide-2 {
+    background-image: url(../img/Banner-2.png);
+}
+
+.slide-3 {
+    background-image: url(../img/Banner-3.png);
+}
+
+.home .container-home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.home .seta-voltar, 
+.home .seta-avancar {
+    position: absolute;
+    z-index: 1;
+    transition: all 0.2s ease-in;
+}
+
+.home .seta-voltar {
+    left: 4%;
+}
+
+.home .seta-avancar {
+    right: 4%;
+    transform: rotateY(180deg);
+}
+
+.home .seta-voltar:hover{
+    transform: scale(1.2);
+}
+
+.opacidade {
+    opacity: 0.5;
+}
+
+
+.home .titulo-home {
+    font-family: var(--fonte-secundaria);
+    color: var(--azul-claro);
+    font-size: 1.9rem;
+    font-weight: 900;
+    padding: 0.7rem;
+}
+
+
+.home p {
+    font-size: 1.2rem;
+    color: var(--azul-claro-escuro);
+    font-weight: 900;
+    padding: 1rem;
+}
+
+.sobre {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.sobre .container-sobre {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sobre .container-sobre div .logo-belle {
+    max-width: calc(400 / 16 * 1rem);
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.sobre .container-sobre div .logo-belle:hover {
+    transform: scale(1.1);
+}
+
+
+.container-sobre .sobre-informacoes {
+    max-width: calc(550 / 16 * 1rem);
+}
+
+.container-sobre .sobre-informacoes h2{
+    font-family: var(--fonte-secundaria);
+    color: var(--azul-claro);
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    margin-bottom: 0.9rem;
+}
+
+.container-sobre .sobre-informacoes p {
+    color: var(--azul-claro);
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 0.6rem;
+    text-align: center;
+}
+
+.produtos , .produtos-kid {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--branco-cinza);
+    padding: 0.7rem;
+}
+
+
+.produtos-kid div:first-child {
+    padding: 1rem;
+}
+
+.produtos h2 , .produtos-kid h2 {
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.produtos div , 
+.produtos-kid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 45.4rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.produto ,
+.produtos-kid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: unset;
+}
+
+.produtos-kid div h2 span {
+    color: var(--rosa-escuro);
+}
+
+.produtos-kid .image-kid,
+.produtos-kid .image-pato {
+    max-width: calc(100 / 16 * 1rem);
+    max-height: calc(100 / 16 * 1rem);
+    transition: all 0.2s ease-in;
+}
+
+.produtos-kid .image-kid:hover {
+    transform: scale(1.1);
+}
+
+.produtos-kid div:last-child {
+    padding: 1rem;
+}
+
+.oculos-belle {
+    max-height: calc(150 / 16 * 1rem);
+    max-width: calc(180 / 16 * 1rem);
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.produto p {
+    font-family: var(--fonte-secundaria);
+    font-weight: 900;
+    color: var(--azul-escuro);
+}
+
+.produto span {
+    font-weight: 600;
+}
+
+.oculos-belle:hover {
+    transform: scale(1.1);
+}
+
+.contato {
+    background-color: var(--preto);
+    color: var(--branco-cinza);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.contato div, 
+.contato div .redes-sociais  {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.contato div {
+    border-bottom: 1px solid;
+}
+
+.contato div .redes-sociais li a img {
+    transition: all 0.2s ease-in-out;
+}
+
+.contato div .redes-sociais li a img:hover {
+    transform: scale(1.2);
+}
+
+.contato div a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--branco-cinza);
+}
+

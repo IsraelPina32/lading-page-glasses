@@ -1,0 +1,13 @@
+:root {
+    --branco: #ffff;
+    --branco-cinza: #eae9e3;
+    --azul-escuro: #032e3d;
+    --azul-marinho: #0078C8;
+    --preto: #000;
+    --rosa-escuro : rgb(235,85,105);
+    /* CALCULO DE TAMANHOS  */
+    --container-width: 1109px;
+    --height-container: calc(51 / 16 * 1rem);
+    /* Fonte Padrão  */
+    --fonte-secundaria: "Josefin Sans", sans-serif;
+}

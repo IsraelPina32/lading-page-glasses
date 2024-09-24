@@ -1,0 +1,43 @@
+@media (max-width: 1024px){
+    .home {
+        background-image: none;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 520px){
+    .sobre .container-sobre {
+        flex-direction: column;
+    }
+
+    .contato div h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .home .slide  {
+        background-image: none;
+    }
+
+    .sobre {
+        height: unset;
+        padding: 1rem;
+    }
+    
+    .home .seta-voltar, 
+    .home .seta-avancar {
+        display: none;
+    }
+
+    .produtos , .produtos-kid {
+        height: unset;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .sobre .container-sobre div .logo-belle {
+        max-width: calc(300 / 16 * 1rem);
+    }
+}
